@@ -1,0 +1,9 @@
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/javascript
+<FilesMatch "\.(jpg|css|png|gif|js|ico)$">
+Header set Cache-Control "max-age=604800"
+</FilesMatch>
+ErrorDocument 404 http://cs12students.dce.harvard.edu/~jmolloy/h4rv4rd/WPW/errors/404.html
+ErrorDocument 403 http://cs12students.dce.harvard.edu/~jmolloy/h4rv4rd/WPW/errors/403.html
+ErrorDocument 500 http://cs12students.dce.harvard.edu/~jmolloy/h4rv4rd/WPW/errors/500.html
